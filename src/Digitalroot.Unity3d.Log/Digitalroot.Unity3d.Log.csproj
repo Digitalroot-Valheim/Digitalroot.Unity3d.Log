@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>Digitalroot.Unity3d.Log</AssemblyName>
+    <TargetFramework>net462</TargetFramework>
+    <LangVersion>9</LangVersion>
+    <PackageId>Digitalroot.Unity3d.Log</PackageId>
+    <RootNamespace>Digitalroot.Unity3d.Log</RootNamespace>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
+    <Copyright>Copyright © Digitalroot Technologies 2022</Copyright>
+    <PackageProjectUrl>https://github.com/Digitalroot-Valheim/Digitalroot.Unity3d.Log</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Digitalroot-Valheim/Digitalroot.Unity3d.Log</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageIcon>ValheimRcon_black.png</PackageIcon>
+    <PackageIconUrl />
+    <PackageTags>unity, digitalroot, log, logging</PackageTags>
+    <Authors>Digitalroot</Authors>
+    <Company>Digitalroot Technologies</Company>
+    <Product>Digitalroot Unity3d Log</Product>
+    <Description>Logging Unity</Description>
+    <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <RestoreAdditionalProjectSources>
+	    https://nuget.bepinex.dev/v3/index.json;
+	    https://digitalroot-valheim-nuget.s3.us-west-2.amazonaws.com/index.json
+    </RestoreAdditionalProjectSources>
+    <IsPublishable>False</IsPublishable>
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net462|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net462|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\ico\ValheimRcon_black.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="UnityEngine.Modules" Version="[2019.4.31]">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>compile</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

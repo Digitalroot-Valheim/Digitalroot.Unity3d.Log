@@ -28,11 +28,24 @@ namespace Digitalroot.Unity3d.Log
         if (!bepInExLogsDirectoryInfo.Exists) bepInExLogsDirectoryInfo.Create();
 
         _traceFileInfo = new FileInfo(Path.Combine(bepInExLogsDirectoryInfo.FullName, $"{_source}.Trace.log"));
+
+        if (_traceFileInfo.Exists)
+        {
+          _traceFileInfo.Delete();
+          _traceFileInfo.Refresh();
+        }
+
+        Application.logMessageReceived += ApplicationLogMessageReceived;
       }
       catch (Exception e)
       {
         Debug.LogException(e);
       }
+    }
+
+    private void ApplicationLogMessageReceived(string condition, string stackTrace, LogType type)
+    {
+      
     }
 
     public void EnableTrace()

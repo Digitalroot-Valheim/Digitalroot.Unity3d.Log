@@ -15,7 +15,6 @@ env:
 
 jobs:
   call-workflow-nuget-release:
-    if: ${{ false }} # disable for now
     uses: Digitalroot-Valheim/.github/.github/workflows/nuget.release.yml@main
     secrets:
       aws-access-key-id: ${{ secrets.NUGET_S3_REPO_KEY_ID }}

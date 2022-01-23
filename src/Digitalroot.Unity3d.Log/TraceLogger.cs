@@ -35,17 +35,11 @@ namespace Digitalroot.Unity3d.Log
           _traceFileInfo.Refresh();
         }
 
-        Application.logMessageReceived += ApplicationLogMessageReceived;
       }
       catch (Exception e)
       {
         Debug.LogException(e);
       }
-    }
-
-    private void ApplicationLogMessageReceived(string condition, string stackTrace, LogType type)
-    {
-      
     }
 
     public void EnableTrace()

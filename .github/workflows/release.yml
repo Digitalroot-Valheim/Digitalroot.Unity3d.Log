@@ -19,14 +19,10 @@ jobs:
     secrets:
       aws-access-key-id: ${{ secrets.NUGET_S3_REPO_KEY_ID }}
       aws-secret-access-key: ${{ secrets.NUGET_S3_REPO_KEY_SECRET }}
-      #nuget-org-key: ${{ secrets.NUGET_ORG_PAT }}
 
     with:
       sln-file-name: Digitalroot.Unity3d.Log
       proj-file-name: Digitalroot.Unity3d.Log
       skip-unit-tests: true
-      #force-assembly-version: true
-      #create-github-release: false
       nuget-gh-upload: true
       nuget-s3-upload: true
-      #nuget-org-upload: true

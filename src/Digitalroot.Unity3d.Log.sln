@@ -14,7 +14,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{E64D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{1960DCD1-3C51-48FF-BFF8-5FE4C3CBABB2}"
 	ProjectSection(SolutionItems) = preProject
-		..\.github\workflows\discord.yml = ..\.github\workflows\discord.yml
 		..\.github\workflows\release.yml = ..\.github\workflows\release.yml
 	EndProjectSection
 EndProject
@@ -36,7 +35,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ico", "ico", "{C66A8E3B-31D
 		ico\ValheimRcon_color.png = ico\ValheimRcon_color.png
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Digitalroot.Unity3d.Log", "Digitalroot.Unity3d.Log\Digitalroot.Unity3d.Log.csproj", "{0FDC39E3-D8A6-434A-9DAD-5EF5A48162E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Digitalroot.Unity3d.Log", "Digitalroot.Unity3d.Log\Digitalroot.Unity3d.Log.csproj", "{0FDC39E3-D8A6-434A-9DAD-5EF5A48162E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
